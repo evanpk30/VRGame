@@ -1,0 +1,45 @@
+{
+    "name": "XRControls",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "57705681-0600-41cb-b038-6155dfb69313",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "b788fd87-5691-4b46-acdb-dff5dc264d99",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "de8229a1-d344-4c42-a1bc-40262e7bd518",
+                    "path": "<XRController>{LeftHand}/{Primary2DAxis}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3be3bbb8-e074-410a-8bbe-dc9b79467c58",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

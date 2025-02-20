@@ -1,0 +1,34 @@
+{
+    "name": "xrControls",
+    "maps": [
+        {
+            "name": "Jump",
+            "id": "4780291f-ee67-4818-96ed-81a7eaf9e790",
+            "actions": [
+                {
+                    "name": "Button",
+                    "type": "Button",
+                    "id": "ed326ca2-568a-4344-96c1-def0780308e5",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "81854086-f811-437a-9998-2d269fbd8cd3",
+                    "path": "<XRController>{RightHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
