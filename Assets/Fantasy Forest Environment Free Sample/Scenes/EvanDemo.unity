@@ -9081,6 +9081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859dbcb2376f0924b8749df59f18efff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterController: {fileID: 1135566833}
   jumpHeight: 1.5
   gravity: -9.81
   groundCheckDistance: 0.2
