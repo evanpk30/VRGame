@@ -8663,7 +8663,6 @@ GameObject:
   - component: {fileID: 1066600072}
   - component: {fileID: 1066600071}
   - component: {fileID: 1066600070}
-  - component: {fileID: 1066600069}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -8671,33 +8670,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &1066600069
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1066600068}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!136 &1066600070
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11793,15 +11765,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dfcbb10d2c93993479b819f9f6977b51, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -30.933983
+      value: -30.98
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dfcbb10d2c93993479b819f9f6977b51, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.69195
+      value: -6.71
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dfcbb10d2c93993479b819f9f6977b51, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.1876831
+      value: -0.16
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dfcbb10d2c93993479b819f9f6977b51, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11838,9 +11810,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: dfcbb10d2c93993479b819f9f6977b51, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1484566234}
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: dfcbb10d2c93993479b819f9f6977b51, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1484566233}
   m_SourcePrefab: {fileID: 100100000, guid: dfcbb10d2c93993479b819f9f6977b51, type: 3}
 --- !u!4 &1484566231 stripped
 Transform:
@@ -11852,33 +11821,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: dfcbb10d2c93993479b819f9f6977b51, type: 3}
   m_PrefabInstance: {fileID: 1484566230}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &1484566233
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1484566232}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &1484566234
 MeshCollider:
   m_ObjectHideFlags: 0
