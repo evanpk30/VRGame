@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem.XR;
 using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class TriggerBoxDecision : MonoBehaviour
 {
@@ -13,14 +15,24 @@ public class TriggerBoxDecision : MonoBehaviour
     public GameObject objectToMove;
     public float pushForce = 20f;
     public ParticleSystem MagicParticleSystem;
+    public XRBaseController Controller;
+    private XRDirectInteractor directInteractor;
+    public GameObject rayInteractor;
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
         {
             popupCanvas.SetActive(true);
-            popupText.text = "Make a choice";
+            directInteractor = Controller.GetComponent<XRDirectInteractor>();
+            //set all the ray interactor needs to true, also set the direct interactor to false as to not interfere
+            rayInteractor.SetActive(true);
+            directInteractor.enabled = false;
+            string stop = "stopTime";
+            Invoke(stop, 0.5f);
+            
         }
+
     }
 
     public void onChoiceA()
@@ -64,6 +76,14 @@ public class TriggerBoxDecision : MonoBehaviour
 
     public void closePopup()
     {
+        Time.timeScale = 1;
+        rayInteractor.SetActive(false);
+        directInteractor.enabled = true;
         popupCanvas.SetActive(false);
+    }
+
+    public void stopTime()
+    {
+        Time.timeScale = 0;
     }
 }
